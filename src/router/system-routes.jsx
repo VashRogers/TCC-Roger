@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router";
 import InitialPage from "../pages/initial-page";
 import Menu from "../pages/menu";
 import FirstYear from "../pages/first-year";
+import SecondYear from "../pages/second-year";
 
 export function SystemRoutes() {
     return (
@@ -12,6 +13,11 @@ export function SystemRoutes() {
 
             <Route path="/first-year">
                 <Route index element={<FirstYear />} />
+            </Route>
+
+            <Route path="/second-year">
+                <Route index element={<SecondYear />} />
+                
             </Route>
         </Routes>
     );

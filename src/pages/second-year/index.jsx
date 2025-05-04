@@ -3,7 +3,7 @@ import { Container } from "../../components/container";
 import { ActivityCardsItem } from "./components/ActivityCardsItem";
 import { ActivityCard } from "../../components/ActivityCard";
 
-export default function FirstYear() {
+export default function SecondYear() {
     return (
         <Container>
             <Grid
