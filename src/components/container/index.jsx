@@ -7,30 +7,42 @@ export function Container({ children }) {
     const navigate = useNavigate();
 
     return (
-        <>
-            <AppBar position="static" color="default" elevation={1}>
+        <Box
+            sx={{
+                height: "100vh",
+                display: "flex",
+                flexDirection: "column",
+            }}
+        >
+            <AppBar
+                position="static"
+                color="default"
+                elevation={1}
+                sx={{ backgroundColor:"#1dbe00"}}
+            >
                 <Toolbar>
                     <IconButton
                         edge="start"
                         color="inherit"
-                        onClick={() => navigate(-1)} // volta para a página anterior
+                        onClick={() => navigate(-1)}
                         aria-label="voltar"
                     >
-                        <ArrowBackIcon />
+                        <ArrowBackIcon sx={{ color: "#FFFF" }} />
                     </IconButton>
                 </Toolbar>
             </AppBar>
 
             <Box
                 sx={{
-                    display: "flex",
                     flexGrow: 1,
-                    height: "100vh",
-                    backgroundColor: palette.background.default,
+                    overflow: "auto",
+                    display: "flex",
+                    background:
+                        "radial-gradient(at 100% 100%, rgb(28, 209, 0),rgb(110, 243, 89) )",
                 }}
             >
                 {children}
             </Box>
-        </>
+        </Box>
     );
 }

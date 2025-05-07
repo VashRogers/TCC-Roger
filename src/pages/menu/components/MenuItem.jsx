@@ -23,17 +23,11 @@ export function MenuItem({ title, link }) {
                     },
                 }}
             >
-                <Typography
-                    fontWeight="bold"
-                    color={palette.background.default}
-                >
+                <Typography fontWeight="bold" color={palette.customPrimary}>
                     {title}
                 </Typography>
 
-                <IoIosArrowForward
-                    color={palette.background.default}
-                    size={18}
-                />
+                <IoIosArrowForward color={palette.customPrimary} size={18} />
             </Button>
         </>
     );

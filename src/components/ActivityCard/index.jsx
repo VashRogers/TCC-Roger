@@ -54,18 +54,15 @@ export function ActivityCard({ headerTitle, title, description, link }) {
                     onClick={() => navigate(link)}
                     variant="outlined"
                     sx={{
-                        color: palette.background.default,
-                        borderColor: palette.background.default,
+                        color: palette.customPrimary,
+                        borderColor: palette.customPrimary,
                         "&:hover": {
-                            borderColor: palette.background.default,
+                            borderColor: palette.customPrimary,
                             backgroundColor: "transparent",
                         },
                     }}
                 >
-                    <Typography
-                        color={palette.background.default}
-                        fontSize={12}
-                    >
+                    <Typography color={palette.customPrimary} fontSize={12}>
                         ver mais
                     </Typography>
                 </Button>

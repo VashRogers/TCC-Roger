@@ -31,13 +31,13 @@ export default function InitialPage() {
                     >
                         <Typography
                             fontWeight="bold"
-                            color={palette.background.default}
+                            color={palette.customPrimary}
                         >
                             Menu
                         </Typography>
 
                         <IoIosArrowForward
-                            color={palette.background.default}
+                            color={palette.customPrimary}
                             size={18}
                         />
                     </Button>
