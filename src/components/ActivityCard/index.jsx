@@ -20,10 +20,16 @@ export function ActivityCard({ headerTitle, title, description, link }) {
                 height: 220,
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "space-between",
             }}
         >
-            <CardContent>
+            <CardContent
+                sx={{
+                    flex: "1 1 auto",
+                    overflow: "hidden",
+                    display: "flex",
+                    flexDirection: "column",
+                }}
+            >
                 <Typography
                     gutterBottom
                     sx={{ color: "text.secondary", fontSize: 14 }}
@@ -37,9 +43,14 @@ export function ActivityCard({ headerTitle, title, description, link }) {
 
                 <Box
                     sx={{
-                        maxHeight: 100,
+                        flexGrow: 1,
                         overflowY: "auto",
                         pr: 1,
+                        mt: 1,
+                        scrollbarWidth: "none", // Firefox
+                        "&::-webkit-scrollbar": {
+                            display: "none", // Chrome, Safari
+                        },
                     }}
                 >
                     <Typography variant="body2" fontSize={12}>
@@ -48,7 +59,7 @@ export function ActivityCard({ headerTitle, title, description, link }) {
                 </Box>
             </CardContent>
 
-            <CardActions>
+            <CardActions sx={{ mt: "auto" }}>
                 <Button
                     size="small"
                     onClick={() => navigate(link)}

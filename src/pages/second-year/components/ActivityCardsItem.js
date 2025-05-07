@@ -2,11 +2,17 @@ export const ActivityCardsItem = [
     {
         id: 1,
         headerTitle: "EF02CO01",
-        title: "",
+        title: "Reconhecimento de Padrões EF02CO01 - Atividade #01",
         description:
-            "Um simples jogo, em que o aluno assimila os elementos que se relacionam",
+            "Envolve identificar o padrão proposto na imagem e inserir os valores conforme o padrão",
         link: "",
     },
-
-   
+    {
+        id: 2,
+        headerTitle: "EF02CO02",
+        title: "Algoritmo EF02CO02 - Atividade #01",
+        description:
+            "Utiliza do recurso de entrada de texto, no qual o aluno insere o valor correspondido a ação a ser realizada de acordo com o algoritmo",
+        link: "",
+    },
 ];

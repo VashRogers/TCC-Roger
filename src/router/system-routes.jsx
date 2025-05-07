@@ -4,6 +4,7 @@ import InitialPage from "../pages/initial-page";
 import Menu from "../pages/menu";
 import FirstYear from "../pages/first-year";
 import SecondYear from "../pages/second-year";
+import ThirdYear from "../pages/third-year";
 
 export function SystemRoutes() {
     return (
@@ -17,8 +18,12 @@ export function SystemRoutes() {
 
             <Route path="/second-year">
                 <Route index element={<SecondYear />} />
-                
             </Route>
+
+            <Route path="/third-year">
+                <Route index element={<ThirdYear />} />
+            </Route>
+            
         </Routes>
     );
 }
