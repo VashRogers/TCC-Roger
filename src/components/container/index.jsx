@@ -1,9 +1,8 @@
-import { Box, useTheme, AppBar, Toolbar, IconButton } from "@mui/material";
+import { Box, AppBar, Toolbar, IconButton } from "@mui/material";
 import { useNavigate } from "react-router";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 export function Container({ children }) {
-    const { palette } = useTheme();
     const navigate = useNavigate();
 
     return (
@@ -18,7 +17,7 @@ export function Container({ children }) {
                 position="static"
                 color="default"
                 elevation={1}
-                sx={{ backgroundColor:"#1dbe00"}}
+                sx={{ backgroundColor: "#1dbe00" }}
             >
                 <Toolbar>
                     <IconButton

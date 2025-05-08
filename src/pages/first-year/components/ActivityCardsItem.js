@@ -5,7 +5,7 @@ export const ActivityCardsItem = [
         title: "Reconhecimento de Padrões EF01CO01 - Atividade #01",
         description:
             "Um simples jogo, em que o aluno assimila os elementos que se relacionam",
-        link: "",
+        link: "/first-year/activity-01",
     },
 
     {
