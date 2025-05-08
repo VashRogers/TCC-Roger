@@ -14,7 +14,7 @@ export const ActivityCardsItem = [
         title: "Algoritmo EF01CO02 - Atividade #01",
         description:
             "Um jogo, em que o aluno segue o refrão de uma música, configurando uma sequência de passos para determinada brincadeira",
-        link: "",
+        link: "/first-year/activity-02",
     },
 
     {
