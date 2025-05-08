@@ -22,6 +22,6 @@ export const ActivityCardsItem = [
         headerTitle: "EF01CO03",
         title: "Algoritmo EF01CO03 - Atividade #01",
         description: ` um jogo baseado no algoritmo “cabeça,ombro, joelho e pé”, consiste no aluno ir selecionando as etapas até encontrar a sequência correta `,
-        link: "",
+        link: "/first-year/activity-03",
     },
 ];
