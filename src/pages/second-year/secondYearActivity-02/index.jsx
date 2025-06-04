@@ -4,8 +4,7 @@ import { ContainerForm } from "../../../components/containerForm";
 import { Title } from "./components/Title";
 import { ActivityContent } from "./components/ActivityContent";
 
-
-export default function FirstYearActivityThree() {
+export default function SecondYearActivityTwo() {
     return (
         <Container>
             <ContainerForm>

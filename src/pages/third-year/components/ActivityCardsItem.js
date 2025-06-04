@@ -5,7 +5,7 @@ export const ActivityCardsItem = [
         title: "Reconhecimento de Padrões EF03CO01 - Atividade #01",
         description:
             "Por meio de uma interface, é exibida uma sentença que o aluno deve classificá-la em verdadeiro ou falso",
-        link: "",
+        link: "/third-year/activity-01",
     },
 
     {
@@ -14,7 +14,7 @@ export const ActivityCardsItem = [
         title: "Algoritmo EF03CO02 - Atividade #01",
         description:
             "Exibe possíveis escolhas para completar o algoritmo e dar continuidade ao problema proposto",
-        link: "",
+        link: "/third-year/activity-02",
     },
 
     {
@@ -23,6 +23,6 @@ export const ActivityCardsItem = [
         title: "Decomposição de Problema EF03CO03 - Atividade #011",
         description:
             "Utiliza do recurso de entradas de texto para ajudar a decompor e montar uma sequência de passos para ajudar colegas a plantar uma árvore",
-        link: "",
+        link: "/third-year/activity-03",
     },
 ];
