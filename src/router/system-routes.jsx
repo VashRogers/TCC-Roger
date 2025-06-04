@@ -17,6 +17,10 @@ import FourthYear from "../pages/fourth-year";
 import FourthYearActivityOne from "../pages/fourth-year/fourthYearActivity-01";
 import FourthYearActivityTwo from "../pages/fourth-year/fourthYearActivity-02";
 import FourthYearActivityThree from "../pages/fourth-year/fourthYearActivity-03";
+import FifthYear from "../pages/fifth-year";
+import FifthYearActivityOne from "../pages/fifth-year/fifthYearActivity-01";
+import FifthYearActivityTwo from "../pages/fifth-year/fifthYearActivity-02";
+import FifthYearActivityThree from "../pages/fifth-year/fifthYearActivity-03";
 
 export function SystemRoutes() {
     return (
@@ -61,7 +65,10 @@ export function SystemRoutes() {
             </Route>
 
             <Route path="/fifth-year">
-                <Route index element={<FourthYear />} />
+                <Route index element={<FifthYear/>} />
+                <Route path="activity-01" element={<FifthYearActivityOne />} />
+                <Route path="activity-02" element={<FifthYearActivityTwo />} />
+                <Route path="activity-03" element={<FifthYearActivityThree />} />
                 
             </Route>
         </Routes>
