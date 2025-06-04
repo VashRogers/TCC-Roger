@@ -21,6 +21,11 @@ import FifthYear from "../pages/fifth-year";
 import FifthYearActivityOne from "../pages/fifth-year/fifthYearActivity-01";
 import FifthYearActivityTwo from "../pages/fifth-year/fifthYearActivity-02";
 import FifthYearActivityThree from "../pages/fifth-year/fifthYearActivity-03";
+import SixthYear from "../pages/sixth-year";
+import SixthYearActivityOne from "../pages/sixth-year/sixthYearActivity-01";
+import SixthYearActivityTwo from "../pages/sixth-year/sixthYearActivity-02";
+import SixthYearActivityThree from "../pages/sixth-year/sixthYearActivity-03";
+import SixthYearActivityFour from "../pages/sixth-year/sixthYearActivity-04";
 
 export function SystemRoutes() {
     return (
@@ -65,10 +70,29 @@ export function SystemRoutes() {
             </Route>
 
             <Route path="/fifth-year">
-                <Route index element={<FifthYear/>} />
+                <Route index element={<FifthYear />} />
                 <Route path="activity-01" element={<FifthYearActivityOne />} />
                 <Route path="activity-02" element={<FifthYearActivityTwo />} />
-                <Route path="activity-03" element={<FifthYearActivityThree />} />
+                <Route
+                    path="activity-03"
+                    element={<FifthYearActivityThree />}
+                />
+            </Route>
+
+            <Route path="/sixth-year">
+                <Route index element={<SixthYear />} />
+                <Route path="activity-01" element={<SixthYearActivityOne />} />
+                <Route path="activity-02" element={<SixthYearActivityTwo />} />
+                <Route
+                    path="activity-03"
+                    element={<SixthYearActivityThree />}
+                />
+                <Route path="activity-04" element={<SixthYearActivityFour />} />
+
+            </Route>
+
+            <Route path="/seventh-year">
+                <Route index element={<SixthYear />} />
                 
             </Route>
         </Routes>
