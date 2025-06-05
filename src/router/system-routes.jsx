@@ -31,6 +31,12 @@ import SeventhYearActivityOne from "../pages/seventh-year/seventhYearActivity-01
 import SeventhYearActivityTwo from "../pages/seventh-year/seventhYearActivity-02";
 import SeventhYearActivityThree from "../pages/seventh-year/seventhYearActivity-03";
 import SeventhYearActivityFive from "../pages/seventh-year/seventhYearActivity-05";
+import EighthYear from "../pages/eighth-year";
+import EighthYearActivityOne from "../pages/eighth-year/eighthYearActivity-01";
+import EighthYearActivityTwo from "../pages/eighth-year/eighthYearActivity-02";
+import EighthYearActivityFour from "../pages/eighth-year/eighthYearActivity-04";
+import NinthYear from "../pages/ninth-year";
+import NinthYearActivityOne from "../pages/ninth-year/ninthYearActivity-01";
 
 export function SystemRoutes() {
     return (
@@ -93,16 +99,41 @@ export function SystemRoutes() {
                     element={<SixthYearActivityThree />}
                 />
                 <Route path="activity-04" element={<SixthYearActivityFour />} />
-
             </Route>
 
             <Route path="/seventh-year">
                 <Route index element={<SeventhYear />} />
-                <Route path="activity-01" element={<SeventhYearActivityOne />} />
-                <Route path="activity-02" element={<SeventhYearActivityTwo />} />
-                <Route path="activity-03" element={<SeventhYearActivityThree />} />
-                <Route path="activity-05" element={<SeventhYearActivityFive />} />
-                
+                <Route
+                    path="activity-01"
+                    element={<SeventhYearActivityOne />}
+                />
+                <Route
+                    path="activity-02"
+                    element={<SeventhYearActivityTwo />}
+                />
+                <Route
+                    path="activity-03"
+                    element={<SeventhYearActivityThree />}
+                />
+                <Route
+                    path="activity-05"
+                    element={<SeventhYearActivityFive />}
+                />
+            </Route>
+
+            <Route path="/eighth-year">
+                <Route index element={<EighthYear />} />
+                <Route path="activity-01" element={<EighthYearActivityOne />} />
+                <Route path="activity-02" element={<EighthYearActivityTwo />} />
+                <Route
+                    path="activity-04"
+                    element={<EighthYearActivityFour />}
+                />
+            </Route>
+
+            <Route path="/ninth-year">
+                <Route index element={<NinthYear />} />
+                <Route path="activity-01" element={<NinthYearActivityOne />} />
             </Route>
         </Routes>
     );
