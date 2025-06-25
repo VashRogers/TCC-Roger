@@ -4,13 +4,13 @@ export const customTheme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#1976d2", // azul padrão, troque pelo seu
+            main: "#1976d2",
         },
         secondary: {
-            main: "#9c27b0", // roxo padrão, troque pelo seu
+            main: "#9c27b0",
         },
         background: {
-            default: "#0ea800",
+            // default: "#0ea800",
             paper: "#ffffff",
         },
         text: {
