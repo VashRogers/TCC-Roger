@@ -11,9 +11,6 @@ export default function InitialPage() {
     const navigate = useNavigate();
 
     const [openModal, setOpenModal] = useState(false);
-    const handleClose = () => {
-        setOpenModal(false);
-    };
 
     return (
         <Container>
@@ -76,7 +73,7 @@ export default function InitialPage() {
                     </Button>
                 </Stack>
             </Box>
-            <StepperModal open={openModal} handleClose={handleClose} />
+            <StepperModal open={openModal}  setOpenModal={setOpenModal} />
         </Container>
     );
 }
